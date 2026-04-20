@@ -1,0 +1,150 @@
+/* PAGE */
+.availability-section {
+  padding: 60px 40px 100px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.availability-section h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* BLOOD STATUS */
+.blood-status {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.status {
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  background: white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.status span {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.available { border-bottom: 3px solid #16a34a; color: #16a34a; }
+.low { border-bottom: 3px solid #f59e0b; color: #f59e0b; }
+.critical { border-bottom: 3px solid #dc2626; color: #dc2626; }
+
+/* FILTER */
+.filter-bar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  width: 360px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+/* TABLE */
+.availability-table {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.availability-header-row {
+  display: grid;
+  grid-template-columns: 70px 1.6fr 1.3fr 1.3fr 1.4fr;
+  padding: 14px 20px;
+  background: #f3f4f6;
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+  text-transform: uppercase;
+  border-radius: 12px 12px 0 0;
+}
+
+.availability-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.availability-row {
+  display: grid;
+  grid-template-columns: 70px 1.6fr 1.3fr 1.3fr 1.4fr;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  font-size: 14px;
+}
+
+/* NEARBY BLOOD BANKS */
+.section-title {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.bank-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.bank-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.bank-card h3 {
+  margin-bottom: 8px;
+}
+
+.bank-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.bank-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.call { background: #b11226; color: white; }
+.direction { background: #374151; color: white; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .bank-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .bank-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+}

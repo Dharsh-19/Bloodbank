@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blood Availability | Blood Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="availability.css?v=6">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🩸 BloodBank</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="availability.html" class="active">Blood Availability</a>
+    <a href="donor.html">Donate</a>
+    <a href="emergency.html">Emergency</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</header>
+
+<section class="availability-section">
+
+  <h1>Blood Availability</h1>
+  <p class="subtitle">Search and filter blood availability records.</p>
+
+  <!-- BLOOD STATUS CARDS -->
+  <div class="blood-status">
+    <div class="status available">A+<span>Available</span></div>
+    <div class="status low">B+<span>Low</span></div>
+    <div class="status available">O+<span>Available</span></div>
+    <div class="status critical">AB-<span>Critical</span></div>
+    <div class="status low">A-<span>Low</span></div>
+    <div class="status available">O-<span>Available</span></div>
+  </div>
+
+  <!-- SEARCH & FILTER -->
+  <div class="filter-bar">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by name or location">
+
+    <select id="bloodFilter">
+      <option value="all">All Blood Groups</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select>
+  </div>
+
+  <!-- AVAILABILITY TABLE -->
+  <div class="availability-table">
+
+    <div class="availability-header-row">
+      <div>S.No</div>
+      <div>Name</div>
+      <div>Blood Group</div>
+      <div>Location</div>
+      <div>Contact</div>
+    </div>
+
+    <div class="availability-list" id="availabilityList">
+      <!-- JS inserts rows -->
+    </div>
+
+  </div>
+
+  <!-- NEARBY BLOOD BANKS -->
+  <h2 class="section-title">Nearest Blood Banks</h2>
+  <p class="subtitle">Contact nearby blood banks for immediate assistance.</p>
+
+  <div class="bank-grid">
+    <div class="bank-card">
+      <h3>Government Blood Bank</h3>
+      <p>📍 Chennai</p>
+      <p>📞 044-23456789</p>
+      <div class="bank-actions">
+        <button class="call">Call</button>
+        <button class="direction">Directions</button>
+      </div>
+    </div>
+
+    <div class="bank-card">
+      <h3>Apollo Blood Center</h3>
+      <p>📍 Avadi</p>
+      <p>📞 044-26789012</p>
+      <div class="bank-actions">
+        <button class="call">Call</button>
+        <button class="direction">Directions</button>
+      </div>
+    </div>
+
+    <div class="bank-card">
+      <h3>Red Cross Blood Bank</h3>
+      <p>📍 Tambaram</p>
+      <p>📞 044-29998877</p>
+      <div class="bank-actions">
+        <button class="call">Call</button>
+        <button class="direction">Directions</button>
+      </div>
+    </div>
+
+    <div class="bank-card">
+      <h3>Stanley Medical Blood Bank</h3>
+      <p>📍 Royapuram</p>
+      <p>📞 044-25281321</p>
+      <div class="bank-actions">
+        <button class="call">Call</button>
+        <button class="direction">Directions</button>
+      </div>
+    </div>
+
+    <div class="bank-card">
+      <h3>MMC Blood Bank</h3>
+      <p>📍 Park Town</p>
+      <p>📞 044-25305000</p>
+      <div class="bank-actions">
+        <button class="call">Call</button>
+        <button class="direction">Directions</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="availability.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency Blood Request | BloodBank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Emergency page styles -->
+  <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🩸 BloodBank</div>
+  <nav>
+   <nav>
+    <a href="home.html">Home</a>
+    <a href="availability.html">Blood Availability</a>
+    <a href="donor.html">Donate</a>
+    <a href="emergency.html">Emergency</a>
+    <a href="index.html" class="logout">Logout</a>
+  </nav>
+  </nav>
+</header>
+
+<!-- EMERGENCY PAGE -->
+<section class="emergency-page">
+
+  <div class="emergency-header">
+    <span class="alert-badge">⚠ Emergency Request</span>
+    <h1>Request Blood Immediately</h1>
+    <p>
+      Use this form only for critical situations.
+      Our team will prioritize your request and respond quickly.
+    </p>
+  </div>
+
+  <form class="emergency-form" id="emergencyForm"
+
+        onsubmit="event.preventDefault(); alert('Emergency request submitted successfully');">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Patient Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Blood Group Required</label>
+        <select required>
+          <option value="">Select</option>
+          <option>A+</option><option>A-</option>
+          <option>B+</option><option>B-</option>
+          <option>O+</option><option>O-</option>
+          <option>AB+</option><option>AB-</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Hospital Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Contact Number</label>
+        <input type="tel" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>City / Location</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Additional Notes</label>
+      <textarea rows="4"
+        placeholder="Any urgency details, ward number, or timing info"></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary emergency-submit">
+      🚑 Submit Emergency Request
+    </button>
+
+  </form>
+
+</section>
+<!-- SUCCESS TOAST -->
+<div class="toast" id="toast">
+  <span>Emergency request received. Our team will contact you shortly.</span>
+</div>
+
+
+<script src="emergency.js"></script>
+
+</body>
+</html>

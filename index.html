@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Blood Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="login-wrapper">
+
+  <!-- LEFT : LOGIN FORM -->
+  <div class="login-form">
+    <h1>Blood Bank Portal</h1>
+    <p class="subtitle">
+      Secure access for donors and blood bank staff
+    </p>
+
+    <form onsubmit="login(event)">
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit">Login</button>
+
+    </form>
+
+   
+  </div>
+
+  <!-- RIGHT : IMAGE -->
+  <div class="login-image">
+    <img src="images/loginimg.png" alt="Blood Donation">
+    <div class="image-overlay">
+      <h2>Donate Blood,<br>Save Lives</h2>
+      <p>Your single donation can help save up to three lives.</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
