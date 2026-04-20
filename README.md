@@ -49,7 +49,8 @@ A responsive Blood Bank web application designed to simplify the process of bloo
 ---
 
 ## 📸 Screenshots
-(Add your UI screenshots here)
+<img width="1894" height="911" alt="Screenshot 2026-04-20 110102" src="https://github.com/user-attachments/assets/fa258f7f-f342-4f4a-9753-43c89caf77cf" />
+
 
 ---
 
